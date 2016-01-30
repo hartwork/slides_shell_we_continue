@@ -15,9 +15,9 @@ Mit `cd`, `chmod`, `cp`, `mkdir`, `mv`, `rm`, `rmdir` umgehen können.
 
 === Nicht-Ziele für heute
 * Keine Shell-GUIs für E-Mail etc. vorstellen
-* Nicht Bis ins letzte Detail gehen
+* Nicht bis ins letzte Detail gehen
 * Kaum Parameter Expansion à la `${i/alt/neu}`
-* Keine Behandlung von Bash Arrays
+* Keine Behandlung von Bash-Arrays
 * Weder POSIX-Shell noch zsh; im Fokus weiterhin: Bash
 
 === Ziele für heute
@@ -193,7 +193,7 @@ sleep^@300^@
 Relevante Buitlins: `jobs`, `fg`, `bg`
 
 
-== Typen: Was gibt es noch außer Variablen?, Funktionen, mkcd, Leerzeichen
+== Typen: Was gibt es noch außer Variablen?
 
 === Typen
 Neben Variablen kennt Bash die Typen:
@@ -362,9 +362,9 @@ image::flow.svg[xxxxxx]
 == Meine Top ~15
 
 === Top Hotkeys
-* `Ctrl + C` -- SIGINT
+* `Ctrl + C` -- `SIGINT`
 * `Ctrl + D` -- EOF (End of file)
-* `Ctrl + Z` -- `SIGTSTOP`
+* `Ctrl + Z` -- `SIGTSTP`
 * `Ctrl + L` -- `clear`
 * `Alt + .`
 * `Ctrl + R`
@@ -391,28 +391,39 @@ image::flow.svg[xxxxxx]
 === Zwischen zwei Ordnern vor- und zurück wechseln
 `cd -`
 
-=== Pipen and `less`
-`........... | less`
+=== Pipen an `less`:
+`..``..``..``..``..``..`` | less`
 
 === Kopie von Ausgabe umlenken
-`..... |& tee log.txt`
+`..``..``. |& tee log.txt`
 
 === Return-Code visualisieren
-* `......... ; echo $?`
-* `......... && echo GOOD`
-* `......... || echo FAILED >&2`
+* `..``..``..``..``. ; echo $?`
+* `..``..``..``..``. && echo GOOD`
+* `..``..``..``..``. || echo FAILED >&2`
 * `export PS1="\${?#0}${PS1}"`
 
 === `echo` als Testlauf vor Dinge schreiben
-`for i in .... ; do echo mv "${i}" "${i%.log}.txt" ; done`
+-----------------------
+for i in ......... ; do
+    echo mv "${i}" "${i%.log}.txt"
+#   ^^^^
+done
+-----------------------
 
 === Rekursives `grep`
-`fgrep -R ...... .......`
-`fgrep -Rl ...... ....... | xargs sed -i ......`
+-----------------------
+# fgrep -R  ....... .......
+# fgrep -Rl ....... ....... | xargs sed -i ......
+-----------------------
 
 === Brace Expansion
-`mv ~/.thunderbird{,_BEFORE}`
-`cp datei{,_BACKUP_2015-12-12}`
+-----------------------
+# mv ~/.thunderbird{,_BEFORE}`
+-----------------------
+-----------------------
+# cp datei{,_BACKUP_2015-12-12}
+-----------------------
 
 === xtrace Debugging aktivieren
 `set -x` oder `set -o xtrace`
@@ -433,17 +444,17 @@ mkcd projekt19
 === In neues Wegwerf-Verzeichnis wechseln
 `cd "$(mktemp -d)"`
 
-=== Prozesse finden (mit Details)
-`ps aux | fgrep ........`
+=== Prozesse auflisten (mit Details)
+`ps aux | fgrep ``..``..``..``..`
 
 === Über welche Dienste bin ich per Netzwerk angreifbar?
 `sudo netstat -tulpen`
 
-=== Was für lokale IP-Adresse hat mein System?
+=== Was für lokale IP-Adressen hat mein System?
 `ip addr`
 
 === Kontext von `cd` beschränken
-`( cd path/to/folder && ......... )`
+`( cd path/to/folder && ..``..``..``..``. )`
 
 === Terminal reparieren
 `reset`
@@ -457,8 +468,8 @@ mkcd projekt19
 === `/usr/bin/env`
 . Umgebungsvariablen listen
 . Programme mit anderer Umgebung aufrufen:
-.* env HOME=/foo ........
-.* env -i HOME=/foo ........
+  * `env HOME=/foo ``..``..``..``..`
+  * `env -i HOME=/foo ``..``..``..``..`
 . Pfadauflösung _mit_ Ausführung
 
 === Beispiel-Wrapper `~/bin/cp`
