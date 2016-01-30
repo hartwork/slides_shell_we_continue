@@ -513,14 +513,19 @@ auf https://www.gentoo.org/[Gentoo Linux]
 in http://kate-editor.org/[Kate/KWrite]
 und https://yakuake.kde.org/[Yakuake].
 
-== Selbst näher ansehen
-* Hardlinks, Softlinks
-* `dd`, `rsync`, `ssh`, `tmux`, `htop`, `strace`, `git`
-* `lsblk`, `findmnt`, `losetup`, `chroot`, `debootstrap`
+== Selbst näher ansehen:
+* Hardlinks, Softlinks, `/dev/null`
+* coreutils -- `chroot`, `dd`, `tac`, ...
+* procps -- `pidof`, `watch`, ...
+* psmisc -- `killall`, `pstree`, ...
+* util-linux -- `findmnt`, `losetup`, `lsblk`, ...
+* `debootstrap`, `git`, `htop`, `kpartx`, `rsync`, `ssh`, `strace`, `tmux`
 * http://beyondgrep.com/[`ack`],
     http://80386.nl/projects/hidesvn/distfiles/[`hidesvn`],
     http://optipng.sourceforge.net/[`optipng`],
+    https://dev.yorhel.nl/ncdu[`ncdu`],
     http://www.ivarch.com/programs/pv.shtml[`pv`],
+    http://mama.indstate.edu/users/ice/tree/[`tree`],
     http://www.vergenet.net/~conrad/software/xsel/[`xsel`]
 
 == Speziellen Dank an Max!
