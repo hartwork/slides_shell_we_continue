@@ -142,8 +142,8 @@ Beispiele:
 == Signale
 
 === Vorweg: Was ist ein Prozess?
-Programm in Ausführung.
-Hat einen Zustand, offene Dateien, belegt zeitweise CPU und Speicher.
+Ein Prozess ist ein Programm in Ausführung. +
+Es hat einen Zustand, offene Dateien, belegt zeitweise CPU und Speicher.
 
 === Die wichtigsten Signale
 * 2 = `SIG`*`INT`* -- `Ctrl+C`
@@ -190,7 +190,7 @@ sleep^@300^@
 
 # kill ${pid}
 ------------------------
-Relevante Buitlins: `jobs`, `fg`, `bg`
+Weitere relevante Builtins: `jobs`, `fg`, `bg`
 
 
 == Typen: Was gibt es noch außer Variablen?
@@ -221,6 +221,8 @@ alias grep='grep --color=auto -I'
 -------------------------------
 alias ALARM='mplayer -loop 0 /path/to/alarm.mp3 &>/dev/null'
 -------------------------------
+(Den Alarm-Sound gibt es als http://creativecommons.org/licenses/by/3.0/[CC-BY] lizensiert
+zum http://www.freesound.org/people/bone666138/sounds/198841/[Download auf freesound.org].)
 
 === Builtins
 Ein paar wichtige Shell Builtins:
@@ -338,9 +340,11 @@ Done.
 === Arithmetic expansion
 -------------------------------
 # truncate --size $((5 * 1024**3)) 5gib.hdd
+# truncate --size 5g 5gib.hdd
 -------------------------------
 -------------------------------
 # dd if=/dev/zero of=5gib.hdd bs=$((1024**2)) count=$((5 * 1024))
+# dd if=/dev/zero of=5gib.hdd bs=M count=5k
 -------------------------------
 
 
@@ -365,9 +369,9 @@ image::flow.svg[xxxxxx]
 * `Ctrl + C` -- `SIGINT`
 * `Ctrl + D` -- EOF (End of file)
 * `Ctrl + Z` -- `SIGTSTP`
-* `Ctrl + L` -- `clear`
+* `Ctrl + L` -- `clear` (Bildschirm "löschen")
 * `Alt + .`
-* `Ctrl + R`
+* `Ctrl + R` -- Inkrementelle Suche
 
 (Alle ohne `Shift`)
 
@@ -388,7 +392,7 @@ image::flow.svg[xxxxxx]
        ^^^^^^^                ^^^^^^^^^^^^^^^
 -------------------------------
 
-=== Zwischen zwei Ordnern vor- und zurück wechseln
+=== Zwischen zwei Ordnern vor- und zurück wechseln:
 `cd -`
 
 === Pipen an `less`:
@@ -426,10 +430,19 @@ done
 -----------------------
 
 === xtrace Debugging aktivieren
-`set -x` oder `set -o xtrace`
+-----------------------
+set -x
+-----------------------
+
+oder
+
+-----------------------
+set -o xtrace
+-----------------------
 
 === Rechner herunterfahren (wenn etwas fertig ist)
-`sudo sh -c 'while pgrep emerge ; do sleep 1 ; done ; poweroff'`
+`sudo sh -c 'while pgrep emerge ; do \` +
+`sleep 1 ; done ; poweroff'`
 
 === In neues Wegwerf-Verzeichnis wechseln
 -----------------------
@@ -457,7 +470,7 @@ mkcd projekt19
 `( cd path/to/folder && ..``..``..``..``. )`
 
 === Terminal reparieren
-`reset`
+`<Ctrl+C>`, `reset`, `<Enter>`
 
 === Schreib-Anfragen persistieren
 `sync`
@@ -466,13 +479,15 @@ mkcd projekt19
 == Bonus-Track: `/usr/bin/env`
 
 === `/usr/bin/env`
+hat folgende Aufgaben:
+
 . Umgebungsvariablen listen
 . Programme mit anderer Umgebung aufrufen:
   * `env HOME=/foo ``..``..``..``..`
   * `env -i HOME=/foo ``..``..``..``..`
 . Pfadauflösung _mit_ Ausführung
 
-=== Beispiel-Wrapper `~/bin/cp`
+=== Beispiel-Wrapper für `cp`
 ------------------------
 #! /usr/bin/env bash
 # Wrapper around cp(1) with invocation echo
@@ -482,19 +497,34 @@ exec /bin/cp "$@"
 ------------------------
 
 == !
-Diese Folien sind entstanden mit Hilfe von:
+Diese Folien sind entstanden mit
+https://fsfe.org/about/basics/freesoftware.de.html[100% freier Software],
+konkret mit Hilfe von:
 
+* http://asciidoctor.org/[Asciidoctor]
 * https://github.com/asciidoctor/asciidoctor-reveal.js[asciidoctor-reveal.js]
-* https://www.gentoo.org/[Gentoo Linux]
+* http://git-scm.com/[Git]
 * https://www.gnu.org/software/make/[GNU make]
+* https://inkscape.org/de/[Inkscape]
+* http://lab.hakim.se/reveal-js/[reveal.js]
+
+auf https://www.gentoo.org/[Gentoo Linux]
+in http://kate-editor.org/[Kate/KWrite]
+und https://yakuake.kde.org/[Yakuake].
 
 == Selbst näher ansehen
 * Hardlinks, Softlinks
 * `dd`, `rsync`, `ssh`, `tmux`, `htop`, `strace`, `git`
-* `lsblk`, `findmnt`
-* `losetup`, `chroot`, `deboostrap`, `xsel`, `optipng`, `pv`, `ack`
-* http://80386.nl/projects/hidesvn/distfiles/[hidesvn]
+* `lsblk`, `findmnt`, `losetup`, `chroot`, `debootstrap`
+* http://beyondgrep.com/[`ack`],
+    http://80386.nl/projects/hidesvn/distfiles/[`hidesvn`],
+    http://optipng.sourceforge.net/[`optipng`],
+    http://www.ivarch.com/programs/pv.shtml[`pv`],
+    http://www.vergenet.net/~conrad/software/xsel/[`xsel`]
 
-== Danke an Max!
+== Speziellen Dank an Max!
 
 == Fragen?!
+Sebastian Pipping -- https://blog.hartwork.org/[Blog],
+  mailto:sebastian@pipping.org[E-Mail],
+  https://github.com/hartwork/[GitHub]
