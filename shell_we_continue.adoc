@@ -230,6 +230,7 @@ Ein paar wichtige Shell Builtins:
 * `cd`
 * `kill`
 * `help`
+* `history`
 * `read`
 * `type`
 
