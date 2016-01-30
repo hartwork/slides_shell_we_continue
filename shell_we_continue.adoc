@@ -43,7 +43,8 @@ Mit `cd`, `chmod`, `cp`, `mkdir`, `mv`, `rm`, `rmdir` umgehen können.
 * Fließkomma-Zahlen (von Bash selbst) nicht unterstützt
 * ...
 
-Man _kann_ den nächsten https://github.com/cemeyer/httpd.sh[Webserver in Bash] schreiben, _sollte_ aber nicht unbedingt.
+Man _kann_ den nächsten https://github.com/cemeyer/httpd.sh[Webserver in Bash] schreiben,
+_sollte_ aber nicht unbedingt.
 
 
 == Terminal "reparieren"
