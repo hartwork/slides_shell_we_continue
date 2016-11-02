@@ -5,6 +5,17 @@
 .PHONY: all
 all: shell_we_continue.html
 
-shell_we_continue.html: shell_we_continue.adoc
+asciidoctor-reveal.js/.git:
+	git submodule init asciidoctor-reveal.js
+	git submodule update asciidoctor-reveal.js
+
+reveal.js/.git:
+	git submodule init reveal.js
+	git submodule update reveal.js
+
+.PHONY: submodules-cloned
+submodules-cloned: asciidoctor-reveal.js/.git reveal.js/.git
+
+shell_we_continue.html: shell_we_continue.adoc submodules-cloned
 	asciidoctor -T asciidoctor-reveal.js/templates/slim $<
 	test -f $@
