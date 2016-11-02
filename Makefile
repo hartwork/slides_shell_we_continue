@@ -24,3 +24,7 @@ reveal.js/css/theme/shell_we_continue.css: reveal.js/css/theme/$(BASE_THEME).css
 shell_we_continue.html: shell_we_continue.adoc submodules-cloned reveal.js/css/theme/shell_we_continue.css
 	asciidoctor -T asciidoctor-reveal.js/templates/slim $<
 	test -f $@
+
+.PHONY: all
+clean:
+	$(RM) shell_we_continue.html reveal.js/css/theme/shell_we_continue.css
