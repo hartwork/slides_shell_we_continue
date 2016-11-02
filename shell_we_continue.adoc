@@ -3,7 +3,7 @@ Copyright (C) 2016 Sebastian Pipping <sebastian@pipping.org>
 Licensed under CC-BY-SA-3.0
 /////////////////////////////////////////////////////////////////////
 
-:revealjs_theme: sky
+:revealjs_theme: shell_we_continue
 :revealjs_slideNumber: true
 :revealjs_transition: fade
 

@@ -2,6 +2,8 @@
 # Copyright (C) 2016 Sebastian Pipping <sebastian@pipping.org>
 # Licensed under CC-BY-SA-3.0
 
+BASE_THEME = beige
+
 .PHONY: all
 all: shell_we_continue.html
 
@@ -16,6 +18,9 @@ reveal.js/.git:
 .PHONY: submodules-cloned
 submodules-cloned: asciidoctor-reveal.js/.git reveal.js/.git
 
-shell_we_continue.html: shell_we_continue.adoc submodules-cloned
+reveal.js/css/theme/shell_we_continue.css: reveal.js/css/theme/$(BASE_THEME).css shell_we_continue.css | reveal.js/.git
+	cat $^ > $@
+
+shell_we_continue.html: shell_we_continue.adoc submodules-cloned reveal.js/css/theme/shell_we_continue.css
 	asciidoctor -T asciidoctor-reveal.js/templates/slim $<
 	test -f $@
