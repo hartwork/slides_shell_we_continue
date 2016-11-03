@@ -24,3 +24,24 @@ code, pre {
 .reveal em {
     color: #8b3d3d;
 }
+
+section#_arithmetic_expansion code {
+    font-size: 100%;
+}
+
+section#_aliase code {
+    font-size: 110%;
+}
+
+section#_globbing_ohne_ergebnisse_nullglob_1_2 code,
+section#_globbing_ohne_ergebnisse_nullglob_2_2 code,
+section#_find_und_xargs_2_3 code,
+section#_find_und_xargs_3_3 code,
+section#_rekursives_code_grep_code code {
+    font-size: 120%;
+}
+
+section#_expansion_bersicht_1_2 li p,
+section#_expansion_bersicht_2_2 li p {
+    margin: 6px 0;
+}
