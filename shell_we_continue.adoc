@@ -454,7 +454,7 @@ set -o xtrace
 `sudo sh -c 'while pgrep emerge ; do \` +
 `sleep 1 ; done ; poweroff'`
 
-=== In neues Wegwerf-Verzeichnis wechseln
+=== In neues Verzeichnis wechseln
 -----------------------
 mkcd() {
     local dir="$1"
