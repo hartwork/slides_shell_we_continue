@@ -263,6 +263,9 @@ mit einer eigenen Funktion `mkcd`.
 ---------------------------------------
 # rm -Rf "${MISSPELT}"/  # STOP!
 
+# echo "${MISSPELT?}"/
+bash: MISSPELT: parameter null or not set
+
 # set -o nounset  # kurz: set -u
 
 # echo "${MISSPELT}"/
