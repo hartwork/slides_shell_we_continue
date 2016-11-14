@@ -43,5 +43,8 @@ section#_rekursives_code_grep_code code {
 
 section#_expansion_bersicht_1_2 li p,
 section#_expansion_bersicht_2_2 li p {
+section#_expansion_Übersicht_1_2 li p,
+section#_expansion_bersicht_2_2 li p,
+section#_expansion_Übersicht_2_2 li p {
     margin: 6px 0;
 }
