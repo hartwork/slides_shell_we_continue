@@ -464,7 +464,7 @@ mkcd() {
 mkcd projekt19
 -----------------------
 
-=== In neues Wegwerf-Verzeichnis wechseln
+=== In neues *Wegwerf*-Verzeichnis wechseln
 `cd "$(mktemp -d)"`
 
 === Prozesse auflisten (mit Details)
