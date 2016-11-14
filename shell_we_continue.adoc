@@ -263,7 +263,7 @@ mit einer eigenen Funktion `mkcd`.
 ---------------------------------------
 # rm -Rf "${MISSPELT}"/  # STOP!
 
-# set -u
+# set -o nounset  # kurz: set -u
 
 # echo "${MISSPELT}"/
 bash: MISSPELT: unbound variable
