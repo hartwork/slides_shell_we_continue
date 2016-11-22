@@ -19,10 +19,10 @@ Mit `cd`, `chmod`, `cp`, `mkdir`, `mv`, `rm`, `rmdir` umgehen können.
 == Was dich erwartet:
 
 === Nicht-Ziele für heute
-* Keine Shell-GUIs für E-Mail etc. vorstellen
 * Nicht bis ins letzte Detail gehen
-* Kaum Parameter Expansion à la `${i/alt/neu}`
+* Keine Text-GUIs für E-Mail, Browser, ... vorstellen
 * Keine Behandlung von Bash-Arrays
+* Kaum "Parameter Expansion" à la `${i/alt/neu}`
 * Weder POSIX-Shell noch zsh; im Fokus weiterhin: Bash
 
 === Ziele für heute
