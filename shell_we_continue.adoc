@@ -148,7 +148,7 @@ Beispiele:
 == Signale
 
 === Vorweg: Was ist ein Prozess?
-Ein Prozess ist ein Programm in Ausführung. +
+Ein Prozess ist ein _Programm in Ausführung_. +
 Es hat einen Zustand, offene Dateien, belegt zeitweise CPU und Speicher.
 
 === Die wichtigsten Signale
