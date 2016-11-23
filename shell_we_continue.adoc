@@ -139,7 +139,7 @@ cp: cannot remove 'datei2': No such file or directory
 
 Beispiele:
 ------------------------
-# export PATH="${PATH}::${HOME}/bin"
+# export PATH="${PATH}::${HOME}/bin"  # naja
 # export PATH="${PATH}:"
 # export PATH=":${PATH}"  # STOP!
 ------------------------
