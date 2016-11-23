@@ -537,8 +537,6 @@ und https://yakuake.kde.org/[Yakuake].
     http://mama.indstate.edu/users/ice/tree/[`tree`],
     http://www.vergenet.net/~conrad/software/xsel/[`xsel`]
 
-== Speziellen Dank an Max!
-
 == Fragen?!
 Sebastian Pipping -- https://blog.hartwork.org/[Blog],
   mailto:sebastian@pipping.org[E-Mail],
