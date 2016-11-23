@@ -363,11 +363,15 @@ Errorecho {1..3}!
 
 === Arithmetic expansion
 -------------------------------
+# sleep $((5*60))
+# sleep 5m
+-------------------------------
+-------------------------------
 # truncate --size $((5 * 1024**3)) 5gib.img
 # truncate --size 5g 5gib.img
 -------------------------------
 -------------------------------
-# dd if=/dev/zero of=5gib.img bs=$((1024**2)) count=$((5 * 1024))
+# dd if=/dev/zero of=5gib.img bs=$((1024**2)) count=$((5*1024))
 # dd if=/dev/zero of=5gib.img bs=M count=5k
 -------------------------------
 
