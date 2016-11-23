@@ -168,7 +168,7 @@ Es hat einen Zustand, offene Dateien, belegt zeitweise CPU und Speicher.
 oder kürzer
 ------------------------
 # pkill -KILL firefox
-  ^       
+  ^
 ------------------------
 
 
