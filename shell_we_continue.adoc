@@ -13,7 +13,7 @@ Für mehr Shell im Alltag.
 
 
 == Voraussetzungen:
-Mit `cd`, `chmod`, `cp`, `mkdir`, `mv`, `rm`, `rmdir` umgehen können.
+Mit `cd`, `cp`, `mkdir`, `mv`, `rm`, `rmdir` umgehen können.
 
 
 == Was dich erwartet:
