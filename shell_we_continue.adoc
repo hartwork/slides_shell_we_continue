@@ -163,11 +163,11 @@ Es hat einen Zustand, offene Dateien, belegt zeitweise CPU und Speicher.
 
 === Senden von Signalen
 ------------------------
-# kill -9 $(pgrep firefox)
+# kill -KILL $(pgrep firefox)
 ------------------------
 oder kürzer
 ------------------------
-# pkill -9 firefox
+# pkill -KILL firefox
   ^       
 ------------------------
 
