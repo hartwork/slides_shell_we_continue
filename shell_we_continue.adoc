@@ -423,6 +423,8 @@ image::flow.svg[xxxxxx]
 === Zwischen zwei Ordnern vor- und zurück wechseln:
 `cd -`
 
+(Siehe auch `pushd`/`popd`)
+
 === Pipen an `less`:
 `..``..``..``..``..``..`` | less`
 
