@@ -34,6 +34,11 @@ Mit `cd`, `cp`, `mkdir`, `mv`, `rm`, `rmdir` umgehen können.
 * Praktisches für den Alltag in Bash, Skripting eher als Nebenprodukt
 
 
+== Zum Ablauf
+* Kurze Pause nach 60 Minuten
+* _Verständnisfragen_ bitte gleich!
+
+
 == Eine Bitte:
 
 === Bitte keine _Software_ in Bash schreiben.
