@@ -277,7 +277,7 @@ bash: MISSPELT: parameter null or not set
 bash: MISSPELT: unbound variable
 ---------------------------------------
 
-=== Sudo mit Umleitung 1/2
+=== sudo mit Umleitung 1/2
 ---------------------------------------
 # sudo echo 1234 > /root/datei4
 bash: /root/datei4: Permission denied
@@ -285,7 +285,7 @@ bash: /root/datei4: Permission denied
 Problem: Umleitung nach `/root/datei4` benötigt bereits
 Root-Rechte -- `sudo` kommt _zu spät_.
 
-=== Sudo mit Umleitung 2/2
+=== sudo mit Umleitung 2/2
 ---------------------------------------
 # sudo echo 1234 > /root/datei4
 bash: /root/datei4: Permission denied
