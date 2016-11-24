@@ -16,14 +16,14 @@ Für mehr Shell im Alltag.
 Mit `cd`, `cp`, `mkdir`, `mv`, `rm`, `rmdir` umgehen können.
 
 
-== Was dich erwartet:
+== Was erwartet dich?
 
-=== Nicht-Ziele für heute
+=== _Nicht_-Ziele für heute
 * Nicht bis ins letzte Detail gehen
 * Keine Text-GUIs für E-Mail, Browser, ... vorstellen
 * Keine Behandlung von Bash-Arrays
 * Kaum "Parameter Expansion" à la `${i/alt/neu}`
-* Weder POSIX-Shell noch zsh; im Fokus weiterhin: Bash
+* Weder POSIX-Shell noch zsh; Fokus bleibt Bash
 
 === Ziele für heute
 * Bausteine und Konzepte vorstellen:
