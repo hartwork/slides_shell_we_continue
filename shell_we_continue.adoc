@@ -85,8 +85,8 @@ Zurücksetzen / _reparieren_:
 # which cp
 /bin/cp
 
-# type cp
-cp is /bin/cp
+# type -p cp
+/bin/cp
 ------------------------
 
 === Eigene Pfade mit aufnehmen
