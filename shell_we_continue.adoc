@@ -154,7 +154,8 @@ Beispiele:
 
 === Vorweg: Was ist ein Prozess?
 Ein Prozess ist ein _Programm in Ausführung_. +
-Es hat einen Zustand, offene Dateien, belegt zeitweise CPU und Speicher.
+Er hat einen Zustand, Dateien geöffnet,
+verbraucht Rechenzeit und Arbeitsspeicher.
 
 === Die wichtigsten Signale
 * 2 = `SIG`*`INT`* -- `Ctrl+C`
