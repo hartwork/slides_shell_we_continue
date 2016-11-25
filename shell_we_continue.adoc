@@ -459,7 +459,7 @@ done
 
 === Brace Expansion
 -----------------------
-# mv ~/.thunderbird{,_BEFORE}`
+# mv ~/.thunderbird{,_BEFORE}
 -----------------------
 -----------------------
 # cp datei{,_BACKUP_2015-12-12}
