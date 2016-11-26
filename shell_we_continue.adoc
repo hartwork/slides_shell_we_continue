@@ -367,6 +367,11 @@ Errorecho {1..3}!
 # convert ~/Desktop/screenshot19.{png,jpeg}
 -------------------------------
 
+(`convert` ist Teil von
+http://www.imagemagick.org/script/index.php[ImageMagick®]
+und dessen Fork
+http://www.graphicsmagick.org/[GraphicsMagick].)
+
 === Arithmetic expansion
 -------------------------------
 # sleep $((5*60))
