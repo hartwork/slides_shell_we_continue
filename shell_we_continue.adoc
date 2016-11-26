@@ -243,7 +243,6 @@ Ein paar wichtige Shell Builtins:
 * `kill`
 * `help`
 * `history`
-* `read`
 * `type`
 
 === Funktionen
