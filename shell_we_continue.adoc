@@ -29,7 +29,7 @@ Mit `cd`, `cp`, `mkdir`, `mv`, `rm`, `rmdir` umgehen können.
 * Bausteine und Konzepte vorstellen:
 ** Path Resolution
 ** Signale, Jobs, Expansion
-** Datenfluss/Piping, etwas Text-Processing
+** Datenfluss / Piping, etwas Text-Processing
 * Möglichkeiten und Fallen aufzeigen
 * Praktisches für den Alltag in Bash, Skripting eher als Nebenprodukt
 
