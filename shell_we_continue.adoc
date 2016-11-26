@@ -335,7 +335,7 @@ Error!!!
 echo "Errorecho {1..3}!"
 Errorecho {1..3}!
 
-# sudo !!  # Letztes Kommando, diesmal mit sudo
+# sudo !!  # Vorheriges Kommando, diesmal mit sudo
 -------------------------------
 
 == Expansion
