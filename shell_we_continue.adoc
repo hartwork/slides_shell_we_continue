@@ -569,6 +569,12 @@ und https://yakuake.kde.org/[Yakuake].
     http://www.vergenet.net/~conrad/software/xsel/[`xsel`]
 
 == Fragen?!
-Sebastian Pipping -- https://blog.hartwork.org/[Blog],
-  mailto:sebastian@pipping.org[E-Mail],
-  https://github.com/hartwork/[GitHub]
+Sebastian Pipping
+
+mailto:sebastian@pipping.org[sebastian@pipping.org]
+ +
+ +
+
+https://blog.hartwork.org/
+
+https://github.com/hartwork/
