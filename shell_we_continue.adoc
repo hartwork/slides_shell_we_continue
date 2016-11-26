@@ -4,7 +4,7 @@ Licensed under CC-BY-SA-3.0
 /////////////////////////////////////////////////////////////////////
 
 :revealjs_theme: shell_we_continue
-:revealjs_slideNumber: true
+:revealjs_slideNumber: false
 :revealjs_transition: fade
 
 
