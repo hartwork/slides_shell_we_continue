@@ -485,6 +485,9 @@ set -o xtrace
 `sudo sh -c 'while pgrep emerge ; do \` +
 `sleep 1 ; done ; poweroff'`
 
+=== Ausgabe von zwei Befehlen vergleichen
+`diff -u <(..``..``.) <(..``..``.)`
+
 === In neues Verzeichnis wechseln
 -----------------------
 mkcd() {
