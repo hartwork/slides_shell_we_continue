@@ -439,7 +439,8 @@ image::flow.svg[xxxxxx]
 `..``..``..``..``..``..`` | less`
 
 === Kopie von Ausgabe umlenken
-`..``..``. |& tee log.txt`
+* `..``..``. | tee /dev/stderr | ..``..``.`
+* `..``..``. |& tee log.txt`
 
 === Return-Code visualisieren
 * `..``..``..``..``. ; echo $?`
